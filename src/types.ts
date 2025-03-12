@@ -27,5 +27,5 @@ export interface Device {
   vlans: Vlan[];
 }
 
-export type SortField = 'name' | 'ip';
-export type SortOrder = 'asc' | 'desc';
+export type SortField = "name" | "ip";
+export type SortOrder = "asc" | "desc";
