@@ -128,7 +128,7 @@ export default function DeviceModal({
             <div className="space-y-4">
               {editedDevice.ports.map((port, index) => (
                 <div key={index} className="border rounded-lg p-4">
-                  <div className="grid grid-cols-5 gap-4">
+                  <div className="grid grid-cols-6 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         Port Number
@@ -157,6 +157,20 @@ export default function DeviceModal({
                         <option value="Not Connected">Not Connected</option>
                         <option value="Disable">Disable</option>
                       </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Vlan
+                      </label>
+                      <input
+                        type="text"
+                        value={port.vlan || ""}
+                        onChange={(e) =>
+                          handlePortChange(index, "vlan", e.target.value)
+                        }
+                        placeholder="Null"
+                        className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">

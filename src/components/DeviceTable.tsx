@@ -176,11 +176,12 @@ export default function DeviceTable({
                   <div className="flex flex-wrap gap-2">
                     {device.ports.map((port) => (
                       <div key={port._id} className="flex flex-col gap-1">
-                        {port.connected_to && (
-                          <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
-                            {port.connected_to.device} : {port.connected_to.ip}
-                          </span>
-                        )}
+                        {port.connected_to &&
+                          typeof port.connected_to === "object" && (
+                            <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                              {port.connected_to.device} {port.connected_to.ip}
+                            </span>
+                          )}
                       </div>
                     ))}
                   </div>
