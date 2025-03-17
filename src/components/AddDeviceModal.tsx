@@ -24,7 +24,7 @@ export default function AddDeviceModal({
   const addPort = () => {
     const newPort: Port = {
       port: "",
-      status: "active",
+      status: "connected",
       vlan: "",
       connected_to: {
         port: "",
@@ -48,19 +48,32 @@ export default function AddDeviceModal({
 
   const updatePort = (
     index: number,
-    field: keyof Port | keyof ConnectedDevice,
+    field: keyof Port | `connected_to.${keyof ConnectedDevice}`,
     value: string
   ) => {
-    const newPorts = [...device.ports];
-    if (field in newPorts[index]) {
-      (newPorts[index] as any)[field] = value;
-    } else {
-      newPorts[index].connected_to = {
-        ...newPorts[index].connected_to,
-        [field]: value,
-      };
-    }
-    setDevice({ ...device, ports: newPorts });
+    setDevice((prevDevice) => {
+      const updatedPorts = [...prevDevice.ports];
+
+      if (field.startsWith("connected_to.")) {
+        const subField = field.replace(
+          "connected_to.",
+          ""
+        ) as keyof ConnectedDevice;
+
+        updatedPorts[index] = {
+          ...updatedPorts[index],
+          connected_to: {
+            ...updatedPorts[index].connected_to,
+            [subField]: value,
+          },
+        };
+      } else {
+        // Update properti utama dalam Port
+        updatedPorts[index] = { ...updatedPorts[index], [field]: value };
+      }
+
+      return { ...prevDevice, ports: updatedPorts };
+    });
   };
 
   const updateVlan = (
@@ -196,9 +209,9 @@ export default function AddDeviceModal({
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
-                        <option value="active">Active</option>
-                        <option value="inactive">Inactive</option>
-                        <option value="error">Error</option>
+                        <option value="connected">Connected</option>
+                        <option value="not connected">Not Connected</option>
+                        <option value="disable">Disable</option>
                       </select>
                     </div>
                     <div>
@@ -222,7 +235,11 @@ export default function AddDeviceModal({
                         type="text"
                         value={port.connected_to.device}
                         onChange={(e) =>
-                          updatePort(index, "device", e.target.value)
+                          updatePort(
+                            index,
+                            "connected_to.device",
+                            e.target.value
+                          )
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
@@ -235,7 +252,7 @@ export default function AddDeviceModal({
                         type="text"
                         value={port.connected_to.port}
                         onChange={(e) =>
-                          updatePort(index, "port", e.target.value)
+                          updatePort(index, "connected_to.port", e.target.value)
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
@@ -248,7 +265,7 @@ export default function AddDeviceModal({
                         type="text"
                         value={port.connected_to.ip}
                         onChange={(e) =>
-                          updatePort(index, "ip", e.target.value)
+                          updatePort(index, "connected_to.ip", e.target.value)
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />

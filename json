@@ -10,7 +10,7 @@
           "device": "GAKKUM-JATIM-DS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk"
       },
       {
@@ -20,7 +20,7 @@
           "device": "AP"
         },
         "port": "Gig 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
@@ -30,7 +30,7 @@
           "device": "AP"
         },
         "port": "Gig 1/0/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
@@ -40,7 +40,7 @@
           "device": "AP"
         },
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
@@ -50,29 +50,29 @@
           "device": "Mikrotik RB_Jatim (ether2-Asti)"
         },
         "port": "Gig 1/0/10",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "555"
       },
       {
         "connected_to": {
           "port": null,
           "ip": null,
-          "device": "Testing User"
+          "device": "testing_user"
         },
         "port": "Gig 1/0/11",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/25",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/26",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       }
     ],
@@ -99,119 +99,119 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
+        "name": "humas_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
+        "name": "server",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.44/24"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
+        "name": "astinet",
         "status": "active",
         "ports": [],
         "ip": null
@@ -228,28 +228,28 @@
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -266,7 +266,7 @@
           "device": "DIKYASA-JATIM-AS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -276,7 +276,7 @@
           "device": "DIKYASA-JATIM-AS2"
         },
         "port": "Gig 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -286,7 +286,7 @@
           "device": "MAINTENANCE-DS"
         },
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -296,7 +296,7 @@
           "device": "RTMC-JATIM-DS1"
         },
         "port": "Ten 1/1/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -306,19 +306,19 @@
           "device": "JATIM-CORE-SW.polri.go.id"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/1/1",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       }
     ],
@@ -346,7 +346,7 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
@@ -360,14 +360,14 @@
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
+        "name": "astinet",
         "status": "active",
         "ports": [],
         "ip": null
@@ -382,28 +382,28 @@
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -420,7 +420,7 @@
           "device": "DIKYASA-JATIM-DS"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -430,31 +430,31 @@
           "device": "GAKKUM-JATIM-DS1"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/10",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "444"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "666"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/13-20",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk (252)"
       }
     ],
@@ -482,21 +482,21 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 111,
-        "name": "Firepower-Mod",
+        "name": "firepower-mod",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 200,
-        "name": "Module_Firepower",
+        "name": "module_firepower",
         "status": "active",
         "ports": [],
         "ip": null
@@ -510,21 +510,21 @@
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.72/24"
       },
       {
         "id": 333,
-        "name": "Bandwidth_Test",
+        "name": "bandwidth_test",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
+        "name": "astinet",
         "status": "active",
         "ports": [
           "Gig 1/0/11"
@@ -533,14 +533,14 @@
       },
       {
         "id": 525,
-        "name": "Firepower-Module",
+        "name": "firepower-module",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIEHOME100",
+        "name": "indihome100",
         "status": "active",
         "ports": [],
         "ip": null
@@ -556,7 +556,7 @@
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
+        "name": "cctv_tahti",
         "status": "active",
         "ports": [],
         "ip": null
@@ -571,28 +571,28 @@
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "active/unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -609,114 +609,114 @@
           "device": "DIKYASA-JATIM-DS"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "port": "Gig 1/0/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/5",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/6",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/7",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/8",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/9",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/10",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/11",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/13",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/14",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/15",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/16",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/17",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/18",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/19",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/20",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/21",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "port": "Gig 1/0/22",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
+        "name": "default",
         "status": "active",
         "ports": [
           "Gi1/0/2",
@@ -728,120 +728,148 @@
       },
       {
         "id": 100,
-        "name": "Testing User",
+        "name": "testing_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
+        "name": "humas_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
+        "name": "server",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.57 /24"
       },
       {
         "id": 252,
-        "name": "AP Management",
+        "name": "ap_management",
         "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1002,
+        "name": "fddi-default",
+        "status": "act/unsup",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1003,
+        "name": "token-ring-default",
+        "status": "act/unsup",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1004,
+        "name": "fddinet-default",
+        "status": "act/unsup",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1005,
+        "name": "trnet-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -858,38 +886,38 @@
           "device": "DIKYASA-JATIM-DS"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": {
-          "device": "AP Management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/3",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "device": "AP Management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/4",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "device": "AP Management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/5",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
+        "name": "default",
         "status": "active",
         "ports": [
           "Gi1/0/2",
@@ -900,147 +928,147 @@
       },
       {
         "id": 100,
-        "name": "Testing User",
+        "name": "testing_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
+        "name": "humas_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
+        "name": "server",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.58/24"
       },
       {
         "id": 252,
-        "name": "AP Management",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
-        "name": "FDDI-Default",
+        "name": "fddi-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
-        "name": "Token-Ring-Default",
+        "name": "token-ring-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
-        "name": "FDDInet-Default",
+        "name": "fddinet-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
-        "name": "TRNet-Default",
+        "name": "trnet-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
@@ -1058,7 +1086,7 @@
           "device": "DIKYASA-JATIM-DS"
         },
         "port": "Ten 1/1/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -1068,7 +1096,7 @@
           "device": "RTMC-JATIM-AS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -1078,7 +1106,7 @@
           "device": "RTMC-JATIM-AS2"
         },
         "port": "Gig 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -1088,36 +1116,36 @@
           "device": "Ditlantas Jatim"
         },
         "port": "Gig 1/0/12",
-        "status": "active",
+        "status": "connected",
         "vlan": "666"
       },
       {
         "connected_to": {
           "port": null,
           "ip": null,
-          "device": "Testing User"
+          "device": "testing_user"
         },
         "port": "Gi1/0/10",
-        "status": "active",
+        "status": "connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/15",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "333"
       },
       {
         "connected_to": null,
         "port": "Ten 1/1/4",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
+        "name": "default",
         "status": "active",
         "ports": [
           "Gi1/0/3-9",
@@ -1130,7 +1158,7 @@
       },
       {
         "id": 100,
-        "name": "Testing User",
+        "name": "testing_user",
         "status": "active",
         "ports": [
           "Gi1/0/10"
@@ -1139,112 +1167,112 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
+        "name": "humas_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
+        "name": "server",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.47/24"
       },
       {
         "id": 252,
-        "name": "AP Management",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
@@ -1260,14 +1288,14 @@
       },
       {
         "id": 444,
-        "name": "ASTINET",
+        "name": "astinet",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
+        "name": "indihome100",
         "status": "active",
         "ports": [],
         "ip": null
@@ -1283,35 +1311,35 @@
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
+        "name": "cctv_tahti",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
-        "name": "FDDI-Default",
+        "name": "fddi-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
-        "name": "Token-Ring-Default",
+        "name": "token-ring-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
-        "name": "FDDInet-Default",
+        "name": "fddinet-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
-        "name": "TRNet-Default",
+        "name": "trnet-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
@@ -1329,70 +1357,70 @@
           "device": "RTMC-JATIM-DS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/3",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port": null,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/4",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/5",
-        "status": "active",
+       "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/6",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/7",
-        "status": "active",
+       "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/10",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "666"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
+        "name": "default",
         "status": "active",
         "ports": [
           "Gi1/0/2",
@@ -1404,133 +1432,133 @@
       },
       {
         "id": 100,
-        "name": "Testing User",
+        "name": "testing_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
+        "name": "humas_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
+        "name": "server",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.48/24"
       },
       {
         "id": 252,
-        "name": "AP Management",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
+        "name": "astinet",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
+        "name": "indihome100",
         "status": "active",
         "ports": [],
         "ip": null
@@ -1546,28 +1574,28 @@
       },
       {
         "id": 1002,
-        "name": "FDDI-Default",
+        "name": "fddi-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
-        "name": "Token-Ring-Default",
+        "name": "token-ring-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
-        "name": "FDDInet-Default",
+        "name": "fddinet-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
-        "name": "TRNet-Default",
+        "name": "trnet-default",
         "status": "act/unsup",
         "ports": [],
         "ip": null
@@ -1585,79 +1613,79 @@
           "device": "RTMC-JATIM-DS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/2",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/3",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/4",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gi1/0/5",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/6",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/7",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/8",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/9",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/10",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/11",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
@@ -1667,98 +1695,98 @@
           "device": "R. Data Center"
         },
         "port": "Gi1/0/12",
-        "status": "active",
+        "status": "connected",
         "vlan": "444"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/13",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/14",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/15",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/16",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/17",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/18",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "224"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/19",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/20",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/21",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/22",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/23",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/24",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/25",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/26",
-        "status": "inactive",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
+        "name": "default",
         "status": "active",
         "ports": [
           "Gi1/0/2",
@@ -1770,7 +1798,7 @@
       },
       {
         "id": 100,
-        "name": "Testing User",
+        "name": "testing_user",
         "status": "active",
         "ports": [
           "Gi1/0/10"
@@ -1779,28 +1807,28 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [
           "Gi1/0/18"
@@ -1809,91 +1837,91 @@
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
+        "name": "humas_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
+        "name": "server",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.49/24"
       },
       {
         "id": 252,
-        "name": "AP Management",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
+        "name": "astinet",
         "status": "active",
         "ports": [
           "Gi1/0/12"
@@ -1909,29 +1937,29 @@
       },
       {
         "id": 1002,
-        "name": "FDDI-Default",
-        "status": "inactive",
+        "name": "fddi-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
-        "name": "Token-Ring-Default",
-        "status": "inactive",
+        "name": "token-ring-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
-        "name": "FDDInet-Default",
-        "status": "inactive",
+        "name": "fddinet-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
-        "name": "TRNet-Default",
-        "status": "inactive",
+        "name": "trnet-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -1948,7 +1976,7 @@
           "device": "BIDDOKES-JATIM-AS"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -1958,7 +1986,7 @@
           "device": "BHAYANGKARI-DS"
         },
         "port": "Ten 1/1/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -1968,7 +1996,7 @@
           "device": "SPKT-JATIM-AS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -1978,25 +2006,25 @@
           "device": "SPKT-JATIM-AS2"
         },
         "port": "Gig 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/3",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/4",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "222"
       }
     ],
@@ -2004,7 +2032,7 @@
       {
         "id": 1,
         "name": "default",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/3",
           "Gi1/0/4",
@@ -2035,49 +2063,49 @@
       {
         "id": 100,
         "name": "testing_user",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 111,
         "name": "VPN_IP_Polda",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 123,
-        "name": "FILESHARING",
-        "status": "Active",
+        "name": "filesharing",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 200,
-        "name": "Module_Firepower",
-        "status": "Active",
+        "name": "module_firepower",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "TRIBRATA_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "WASPADA_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [
           "Gi1/0/12"
         ],
@@ -2085,169 +2113,169 @@
       },
       {
         "id": 224,
-        "name": "BHAKTI_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "DHARMA_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "PRATIDINA_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "TRIBRATA_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "WASPADA_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "BHAKTI_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "DHARMA_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "PRATIDINA_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
         "name": "management_network",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": "10.17.251.20/24"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 333,
-        "name": "Test_Bandwidth",
-        "status": "Active",
+        "name": "test_bandwidth",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
-        "status": "Active",
+        "name": "astinet",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 525,
-        "name": "Firepower-Module",
-        "status": "Active",
+        "name": "firepower-module",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
-        "status": "Active",
+        "name": "indihome100",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 666,
         "name": "LOCAL_SERVER_172",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
-        "status": "Active",
+        "name": "cctv_tahti",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 912,
         "name": "management",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "trcrf-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trbrf-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -2264,13 +2292,13 @@
           "device": "SPKT-JATIM-DS"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "252"
       },
       {
@@ -2280,7 +2308,7 @@
           "device": null
         },
         "port": "Gig 1/0/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
@@ -2290,139 +2318,139 @@
           "device": null
         },
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/5",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/6",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/7",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/8",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/9",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/10",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/13",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/14",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/15",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/16",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/17",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/18",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/19",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/20",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/21",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/22",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/23",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/24",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/25",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/26",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       }
     ],
@@ -2430,7 +2458,7 @@
       {
         "id": 1,
         "name": "default",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/6",
           "Gi1/0/24",
@@ -2442,119 +2470,119 @@
       {
         "id": 100,
         "name": "testing_user",
-        "status": "Active",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 251,
         "name": "management",
-        "status": "Active",
+        "status": "active",
         "ports": null,
         "ip": "10.17.251.54/24"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [
           "Gi1/0/2"
         ],
@@ -2562,22 +2590,22 @@
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
-        "status": "Active",
+        "name": "indihome100",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       }
@@ -2594,50 +2622,50 @@
           "device": "SPKT-JATIM-DS"
         },
         "port": "Gi1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/5",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/6",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/7",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/8-26",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
+        "name": "default",
         "status": "active",
         "ports": [
           "Gi1/0/2",
@@ -2648,133 +2676,133 @@
       },
       {
         "id": 100,
-        "name": "Testing User",
+        "name": "testing_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
+        "name": "humas_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
+        "name": "server",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.55/24"
       },
       {
         "id": 252,
-        "name": "AP Management",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
+        "name": "indihome100",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
-        "name": "Default VLANs",
+        "name": "default VLANs",
         "status": "act/unsup",
         "ports": [],
         "ip": null
@@ -2813,7 +2841,7 @@
           "device": "SPKT-JATIM-DS"
         },
         "port": "Ten 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -2831,25 +2859,25 @@
       {
         "connected_to": null,
         "port": "Gi1/0/3",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/4",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/5",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/6",
-        "status": "active",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
@@ -3012,112 +3040,112 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
+        "name": "tribata_user",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
+        "name": "tribrata_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
+        "name": "waspada_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
+        "name": "bhakti_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
+        "name": "dharma_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
+        "name": "pratidina_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
+        "name": "humas_corp",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
+        "name": "tribrata_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
+        "name": "waspada_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
+        "name": "bhakti_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
+        "name": "dharma_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
+        "name": "pratidina_guest",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "Tribrata_Office",
+        "name": "tribrata_office",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
+        "name": "management",
         "status": "active",
         "ports": [],
         "ip": "10.17.251.55/24"
       },
       {
         "id": 252,
-        "name": "AP Management",
+        "name": "ap_management",
         "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
-        "name": "Default VLANs",
+        "name": "default VLANs",
         "status": "act/unsup",
         "ports": [],
         "ip": null
@@ -3156,79 +3184,79 @@
           "device": "PJR-JATIM-AS"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "1"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/3",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "1"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/5",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/6",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/7",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/8",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/9",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/10",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/11",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gi1/0/12",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gi1/1/1",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "1"
       },
       {
         "connected_to": null,
         "port": "Gi1/1/2",
-        "status": "Not connected",
+        "status": "not connected",
         "vlan": "1"
       },
       {
@@ -3238,7 +3266,7 @@
           "device": "DITPROPAM-JATIM-DS"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -3248,15 +3276,15 @@
           "device": "JATANRAS-JATIM-DS"
         },
         "port": "Ten 1/1/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
-        "status": "Active",
+        "name": "default",
+        "status": "active",
         "ports": [
           "Gi1/0/2",
           "Gi1/0/3",
@@ -3288,8 +3316,8 @@
       },
       {
         "id": 100,
-        "name": "Testing_User",
-        "status": "Active",
+        "name": "testing_user",
+        "status": "active",
         "ports": [
           "Gi1/0/11",
           "Gi1/0/12"
@@ -3298,155 +3326,155 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
-        "status": "Active",
+        "name": "management",
+        "status": "active",
         "ports": [],
         "ip": "10.17.251.68/24"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
-        "status": "Active",
+        "name": "indihome100",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
-        "status": "Active",
+        "name": "cctv_tahti",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
-        "name": "FDDI-Default",
-        "status": "Act/Unsup",
+        "name": "fddi-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
-        "name": "Token-Ring-Default",
-        "status": "Act/Unsup",
+        "name": "token-ring-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
-        "name": "FDDInet-Default",
-        "status": "Act/Unsup",
+        "name": "fddinet-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
-        "name": "TRNet-Default",
-        "status": "Act/Unsup",
+        "name": "trnet-default",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -3463,163 +3491,163 @@
           "device": "PJR-JATIM-DS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/5",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/6",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/7",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/8",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/9",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/10",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/13",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/14",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/15",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/16",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/17",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/18",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/19",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/20",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/21",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/22",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/23",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/24",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/25",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/26",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
         "connected_to": null,
         "port": "Ten 1/0/1",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": null
       },
       {
@@ -3629,7 +3657,7 @@
           "device": "JATIM-CORE-SW.polri.go.id"
         },
         "port": "Ten 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": null
       }
     ],
@@ -3637,7 +3665,7 @@
       {
         "id": 1,
         "name": "default",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/2",
           "Gi1/0/6",
@@ -3664,7 +3692,7 @@
       {
         "id": 100,
         "name": "testing_user",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/5",
           "Gi1/0/7",
@@ -3674,148 +3702,148 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
         "name": "management",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": "10.17.251.70/24"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
-        "status": "Active",
+        "name": "indihome100",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "Unsupported",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -3832,7 +3860,7 @@
           "device": "JATIM-CORE-SW.polri.go.id"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -3842,7 +3870,7 @@
           "device": "NARKOBA-JATIM-AS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -3852,19 +3880,19 @@
           "device": "LINK-to-NARKOBA-JATIM-AS2"
         },
         "port": "Gig 1/0/2",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/5",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "VLAN 666"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "VLAN 666"
       },
       {
@@ -3874,7 +3902,7 @@
           "device": ""
         },
         "port": "Gig 1/0/15",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "VLAN 333"
       }
     ],
@@ -3882,7 +3910,7 @@
       {
         "id": 1,
         "name": "default",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/2",
           "Gi1/0/3",
@@ -3913,126 +3941,126 @@
       {
         "id": 100,
         "name": "testing_user",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
         "name": "management",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": "10.17.251.34"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 333,
-        "name": "Test_Bandwidth",
-        "status": "Active",
+        "name": "test_bandwidth",
+        "status": "active",
         "ports": [
           "Gi1/0/15"
         ],
@@ -4040,15 +4068,15 @@
       },
       {
         "id": 444,
-        "name": "ASTINET",
-        "status": "Active",
+        "name": "astinet",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 666,
         "name": "LOCAL_SERVER_172",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/5",
           "Gi1/0/11"
@@ -4057,36 +4085,36 @@
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
-        "status": "Active",
+        "name": "cctv_tahti",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -4103,157 +4131,157 @@
           "device": "NARKOBA-JATIM-DS"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/5",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/6",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/7",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/8",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/9",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/10",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/13",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/14",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/15",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/16",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/17",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/18",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/19",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/20",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/21",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/22",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/23",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/24",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/25",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/26",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       }
     ],
@@ -4261,7 +4289,7 @@
       {
         "id": 1,
         "name": "default",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/2",
           "Gi1/0/5",
@@ -4291,63 +4319,63 @@
       {
         "id": 100,
         "name": "testing_user",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "Server",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
-        "status": "Active",
+        "name": "management",
+        "status": "active",
         "ports": [
           "Gi1/0/1"
         ],
@@ -4356,7 +4384,7 @@
       {
         "id": 252,
         "name": "Trunk",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/3",
           "Gi1/0/4",
@@ -4377,7 +4405,7 @@
           "device": "JATIM-CORE-SW.polri.go.id"
         },
         "port": "Ten 1/1/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -4387,7 +4415,7 @@
           "device": "SPKT-JATIM-DS"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
@@ -4397,35 +4425,35 @@
           "device": "BHAYANGKARI-JATIM-AS1"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/3",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": {
           "port": null,
           "ip": null,
-          "device": "AP Management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/5",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
@@ -4435,35 +4463,35 @@
           "device": "Bhakti Corp"
         },
         "port": "Gig 1/0/10",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "224"
       },
       {
         "connected_to": {
           "port": null,
           "ip": null,
-          "device": "AP Management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/11",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
           "port": null,
           "ip": null,
-          "device": "AP Management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/12",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
-        "status": "Active",
+        "name": "default",
+        "status": "active",
         "ports": [
           "Gi1/0/2",
           "Gi1/0/3",
@@ -4491,43 +4519,43 @@
       },
       {
         "id": 100,
-        "name": "Testing User",
-        "status": "Active",
+        "name": "testing_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 111,
-        "name": "VPN_IP_POLDA",
-        "status": "Active",
+        "name": "VPN_IP_Polda",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [
           "Gi1/0/10"
         ],
@@ -4535,141 +4563,141 @@
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
-        "status": "Active",
+        "name": "management",
+        "status": "active",
         "ports": [],
         "ip": "10.17.251.50"
       },
       {
         "id": 252,
-        "name": "AP Management",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 333,
-        "name": "Test_Bandwidth",
-        "status": "Active",
+        "name": "test_bandwidth",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
-        "status": "Active",
+        "name": "astinet",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
-        "status": "Active",
+        "name": "indihome100",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
-        "status": "Active",
+        "name": "cctv_tahti",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -4686,57 +4714,57 @@
           "device": "BHAYANGKARI-DS"
         },
         "port": "Gig 1/0/1",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/5",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/6-1/0/26",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Ten 1/0/1",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Ten 1/0/2",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
-        "status": "Active",
+        "name": "default",
+        "status": "active",
         "ports": [
           "Gi1/0/6",
           "Gi1/0/24",
@@ -4747,169 +4775,169 @@
       },
       {
         "id": 100,
-        "name": "Testing_User",
-        "status": "Active",
+        "name": "testing_user",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 111,
-        "name": "VPN_IP_POLDA",
-        "status": "Active",
+        "name": "VPN_IP_Polda",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
-        "status": "Active",
+        "name": "management",
+        "status": "active",
         "ports": null,
         "ip": "10.17.251.51"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 333,
-        "name": "Test_Bandwidth",
-        "status": "Active",
+        "name": "test_bandwidth",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 444,
-        "name": "ASTINET",
-        "status": "Active",
+        "name": "astinet",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       }
@@ -4926,125 +4954,125 @@
           "device": "WASPADA-JATIM-DS"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/1",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/9",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "444"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "333"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "224"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/14",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "224"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/17",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/18",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/19",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/20",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/21",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/22",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/23",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": {
-          "port": "AP Management",
+          "port":null ,
           "ip": null,
-          "device": null
+          "device": "AP management"
         },
         "port": "Gig 1/0/24",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
-        "status": "Active",
+        "name": "default",
+        "status": "active",
         "ports": [
           "Gi1/0/1-8",
           "Gi1/0/10",
@@ -5057,43 +5085,43 @@
       },
       {
         "id": 100,
-        "name": "Testing_User",
-        "status": "Active",
+        "name": "testing_user",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 111,
         "name": "VPN_IP_Polda",
-        "status": "Active",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [
           "Gi1/0/12",
           "Gi1/0/14"
@@ -5102,92 +5130,92 @@
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
-        "status": "Active",
+        "name": "management",
+        "status": "active",
         "ports": null,
         "ip": "10.17.251.66"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 333,
-        "name": "Test_Bandwidth",
-        "status": "Active",
+        "name": "test_bandwidth",
+        "status": "active",
         "ports": [
           "Gi1/0/11"
         ],
@@ -5195,8 +5223,8 @@
       },
       {
         "id": 444,
-        "name": "ASTINET",
-        "status": "Active",
+        "name": "astinet",
+        "status": "active",
         "ports": [
           "Gi1/0/9"
         ],
@@ -5204,43 +5232,43 @@
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
-        "status": "Active",
+        "name": "indihome100",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
-        "status": "Active",
+        "name": "cctv_tahti",
+        "status": "active",
         "ports": null,
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": null,
         "ip": null
       }
@@ -5257,13 +5285,13 @@
           "device": "JATIM-CORE-SW.polri.go.id"
         },
         "port": "Ten 1/1/3",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/1",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
@@ -5299,19 +5327,19 @@
       {
         "connected_to": null,
         "port": "Gig 1/0/21",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/22",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/23",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       },
       {
@@ -5321,15 +5349,15 @@
           "device": "DITBINMAS-JATIM-DS"
         },
         "port": "Gig 1/0/24",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       }
     ],
     "vlans": [
       {
         "id": 1,
-        "name": "Default",
-        "status": "Active",
+        "name": "default",
+        "status": "active",
         "ports": [
           "Gi1/0/2-10",
           "Gi1/0/13-20",
@@ -5340,8 +5368,8 @@
       },
       {
         "id": 100,
-        "name": "Testing_User",
-        "status": "Active",
+        "name": "testing_user",
+        "status": "active",
         "ports": [
           "Gi1/0/1",
           "Gi1/0/11",
@@ -5352,155 +5380,155 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
-        "name": "Management",
-        "status": "Active",
+        "name": "management",
+        "status": "active",
         "ports": [],
         "ip": "10.17.251.73"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 333,
-        "name": "Test_Bandwidth",
-        "status": "Active",
+        "name": "test_bandwidth",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
-        "status": "Active",
+        "name": "cctv_tahti",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
@@ -5517,43 +5545,43 @@
           "device": "PJR-JATIM-DS1"
         },
         "port": "Ten 1/1/4",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/1",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "Trunk (252)"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/10",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Connected",
+        "status": "connected",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Ten 1/1/3",
-        "status": "Not Connected",
+        "status": "not connected",
         "vlan": "Trunk"
       }
     ],
@@ -5561,7 +5589,7 @@
       {
         "id": 1,
         "name": "default",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/1",
           "Gi1/0/3-9",
@@ -5574,7 +5602,7 @@
       {
         "id": 100,
         "name": "testing_user",
-        "status": "Active",
+        "status": "active",
         "ports": [
           "Gi1/0/10",
           "Gi1/0/11",
@@ -5584,155 +5612,155 @@
       },
       {
         "id": 110,
-        "name": "TRIBATA_USER",
-        "status": "Active",
+        "name": "tribata_user",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 221,
-        "name": "Tribrata_Corp",
-        "status": "Active",
+        "name": "tribrata_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 222,
-        "name": "Waspada_Corp",
-        "status": "Active",
+        "name": "waspada_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 224,
-        "name": "Bhakti_Corp",
-        "status": "Active",
+        "name": "bhakti_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 226,
-        "name": "Dharma_Corp",
-        "status": "Active",
+        "name": "dharma_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 228,
-        "name": "Pratidina_Corp",
-        "status": "Active",
+        "name": "pratidina_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 230,
-        "name": "HUMAS_Corp",
-        "status": "Active",
+        "name": "humas_corp",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 241,
-        "name": "Tribrata_Guest",
-        "status": "Active",
+        "name": "tribrata_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 242,
-        "name": "Waspada_Guest",
-        "status": "Active",
+        "name": "waspada_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 243,
-        "name": "Bhakti_Guest",
-        "status": "Active",
+        "name": "bhakti_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 244,
-        "name": "Dharma_Guest",
-        "status": "Active",
+        "name": "dharma_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 245,
-        "name": "Pratidina_Guest",
-        "status": "Active",
+        "name": "pratidina_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 246,
-        "name": "HUMAS_Guest",
-        "status": "Active",
+        "name": "humas_guest",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 250,
-        "name": "SERVER",
-        "status": "Active",
+        "name": "server",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 251,
         "name": "management",
-        "status": "Active",
+        "status": "active",
         "ports": [],
         "ip": "10.17.251.73"
       },
       {
         "id": 252,
-        "name": "AP_MANAGEMENT",
-        "status": "Active",
+        "name": "ap_management",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 555,
-        "name": "INDIHOME100",
-        "status": "Active",
+        "name": "indihome100",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 777,
-        "name": "CCTV_TAHTI",
-        "status": "Active",
+        "name": "cctv_tahti",
+        "status": "active",
         "ports": [],
         "ip": null
       },
       {
         "id": 1002,
         "name": "fddi-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1003,
         "name": "token-ring-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1004,
         "name": "fddinet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       },
       {
         "id": 1005,
         "name": "trnet-default",
-        "status": "Act/Unsup",
+        "status": "act/unsup",
         "ports": [],
         "ip": null
       }
