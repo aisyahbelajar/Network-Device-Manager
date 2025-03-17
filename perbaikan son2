@@ -1,0 +1,291 @@
+{
+  "name": "LANTAS-JATIM-AS1",
+  "ip": "10.17.251.18",
+  "ports": [
+    {
+      "port": "Gi 1/0/1",
+      "status": "Connected",
+      "vlan": "trunk",
+      "connected_to": {
+        "port": "Gi 1/0/2",
+        "ip": "10.17.251.17",
+        "device": "PRATIDINA-JATIM-DS1"
+      }
+    },
+    {
+      "port": "Gi 1/0/3 - Gi 1/0/5, Gi 1/0/7 - Gi 1/0/12",
+      "status": "Connected",
+      "vlan": "Trunk (252)",
+      "connected_to": {
+        "port" : null,
+        "ip" : null,
+        "device" : "AP_Management"
+      }
+    },
+    {
+      "port": "Gi 1/0/2, Gi 1/0/6, Gi 1/0/15 - Gi 1/0/26",
+      "status": "Not Connected",
+      "vlan": "Trunk (252)",
+      "connected_to": {
+        "port" : null,
+        "ip" : null,
+        "device" : "AP_Management"
+      }
+    },
+    {
+        "port": "Gi 1/0/13",
+        "status": "Connected",
+        "vlan": "100",
+        "connected_to": {
+          "port" : null,
+          "ip" : null,
+          "device" : "Testing_User"
+        }
+      },
+      {
+        "port": "Gi 1/0/14",
+        "status": "Not Connected",
+        "vlan": "333",
+        "connected_to": {
+          "port" : null,
+          "ip" : null,
+          "device" : "Test_Bandwidth"
+        }
+      }
+  ],
+  "vlans": [
+    {
+      "id": 1,
+      "name": "default",
+      "status": "active",
+      "ports": ["Gi 1/0/2", "Gi 1/0/6", "Gi 1/0/15", "Gi 1/0/17"," Gi 1/0/18", "Gi 1/0/19-Gi 1/0/24", "Te 1/0/1-Te 1/0/2"],
+      "ip": null
+    },
+    {
+      "id": 100,
+      "name": "testing_user",
+      "status": "active",
+      "ports": [
+        "Gi 1/0/13"
+      ],
+      "ip": null
+    },
+    {
+      "id": 110,
+      "name": "tribrata_user",
+      "status": "active",
+      "ports": [
+       
+      ],
+      "ip": null
+    },
+    {
+        "id": 111,
+        "name": "vpn_ip_polda",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 123,
+        "name": "filesharing",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 200,
+        "name": "module_firepower",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 221,
+        "name": "tribrata_corp",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 222,
+        "name": "waspada_corp",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 224,
+        "name": "bhakti_corp",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 226,
+        "name": "dharma_corp",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 228,
+        "name": "pratidina_corp",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 230,
+        "name": "humas_corp",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 241,
+        "name": "tribrata_guest",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 242,
+        "name": "waspada_guest",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 243,
+        "name": "bhakti_guest",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 244,
+        "name": "dharma_guest",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 245,
+        "name": "pratidina_guest",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 246,
+        "name": "humas_guest",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 250,
+        "name": "server",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 251,
+        "name": "management_network",
+        "status": "active",
+        "ports": [],
+        "ip": "10.17.251.18/24"
+      },
+      {
+        "id": 252,
+        "name": "ap_management",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 333,
+        "name": "test_bandwidth",
+        "status": "active",
+        "ports": [
+          "Gi 1/0/14"
+        ],
+        "ip": null
+      },
+      {
+        "id": 444,
+        "name": "astinet",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 525,
+        "name": "firepower-module",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 555,
+        "name": "indihome100",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 666,
+        "name": "local_server_172",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 777,
+        "name": "cctv_tahti",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 912,
+        "name": "management",
+        "status": "active",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1002,
+        "name": "fddi-default",
+        "status": "act/unsup",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1003,
+        "name": "trcrf-default",
+        "status": "act/unsup",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1004,
+        "name": "fddinet-default",
+        "status": "act/unsup",
+        "ports": [],
+        "ip": null
+      },
+      {
+        "id": 1005,
+        "name": "trbrf-default",
+        "status": "act/unsup",
+        "ports": [],
+        "ip": null
+      }
+    
+  ]
+}
+
+   

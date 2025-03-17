@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Device, Port, Vlan } from "../types";
-import { X } from "lucide-react";
+import { X, Plus, Trash2 } from "lucide-react";
+import { NumericType } from "mongodb";
 
 interface DeviceModalProps {
   device: Device;
   onClose: () => void;
-  onSave: (device: Device) => void;
+  onSave: (device: Device) => Promise<boolean>;
 }
 
 export default function DeviceModal({
@@ -14,6 +15,8 @@ export default function DeviceModal({
   onSave,
 }: DeviceModalProps) {
   const [editedDevice, setEditedDevice] = useState<Device>({ ...device });
+  const [error, setError] = useState<string>("");
+  const [isSaving, setIsSaving] = useState(false);
 
   const handlePortChange = (
     index: number,
@@ -25,6 +28,10 @@ export default function DeviceModal({
     value: string
   ) => {
     const newPorts = [...editedDevice.ports];
+
+    if (!newPorts[index].connected_to) {
+      newPorts[index].connected_to = { device: "", ip: "", port: "" };
+    }
 
     if (field.startsWith("connected_to.")) {
       const subField = field.split(".")[1];
@@ -45,17 +52,81 @@ export default function DeviceModal({
     setEditedDevice({ ...editedDevice, ports: newPorts });
   };
 
+  const addPort = () => {
+    setEditedDevice({
+      ...editedDevice,
+      ports: [
+        ...editedDevice.ports,
+        {
+          port: "",
+          status: "connected",
+          vlan: "",
+          connected_to: {
+            device: " ",
+            ip: "",
+            port: "",
+          },
+        },
+      ],
+    });
+  };
+
+  const removePort = (index: number) => {
+    const newPorts = [...editedDevice.ports];
+    newPorts.splice(index, 1);
+    setEditedDevice({ ...editedDevice, ports: newPorts });
+  };
+
   const handleVlanChange = (
     index: number,
     field: keyof Vlan,
     value: string | number
   ) => {
     const newVlans = [...editedDevice.vlans];
+
+    if (!newVlans[index]) return;
     newVlans[index] = {
       ...newVlans[index],
       [field]: field === "id" ? Number(value) : value,
     };
     setEditedDevice({ ...editedDevice, vlans: newVlans });
+  };
+
+  const addVlan = () => {
+    setEditedDevice({
+      ...editedDevice,
+      vlans: [
+        ...editedDevice.vlans,
+        {
+          id: 1,
+          name: "",
+          status: "active",
+          ports: [],
+          ip: "",
+        },
+      ],
+    });
+  };
+
+  const removeVlans = (index: number) => {
+    const newVlans = [...editedDevice.vlans];
+    newVlans.splice(index, 1);
+    setEditedDevice({ ...editedDevice, vlans: newVlans });
+  };
+
+  const handleSubmit = async () => {
+    try {
+      setIsSaving(true);
+      setError("");
+      const success = await onSave(editedDevice);
+      if (success) {
+        onClose();
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to save changes");
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   return (
@@ -70,6 +141,12 @@ export default function DeviceModal({
             <X size={24} />
           </button>
         </div>
+
+        {error && (
+          <div className="mb-4 p-4 bg-red-100 text-red-700 rounded-lg">
+            {error}
+          </div>
+        )}
 
         <div className="space-y-6">
           <div>
@@ -101,11 +178,13 @@ export default function DeviceModal({
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-2">Ports</h3>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-medium">Ports</h3>
+            </div>
             <div className="space-y-4">
               {editedDevice.ports.map((port, index) => (
                 <div key={index} className="border rounded-lg p-4">
-                  <div className="grid grid-cols-5 gap-4">
+                  <div className="flex gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         Port Number
@@ -130,10 +209,24 @@ export default function DeviceModal({
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
-                        <option value="active">Active</option>
-                        <option value="inactive">Inactive</option>
-                        <option value="error">Error</option>
+                        <option value="connected">Connected</option>
+                        <option value="not connected">Not Connected</option>
+                        <option value="disable">Disable</option>
                       </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Vlan
+                      </label>
+                      <input
+                        type="text"
+                        value={port.vlan || ""}
+                        onChange={(e) =>
+                          handlePortChange(index, "vlan", e.target.value)
+                        }
+                        placeholder="Null"
+                        className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -153,7 +246,6 @@ export default function DeviceModal({
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
                     </div>
-
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         IP
@@ -190,21 +282,43 @@ export default function DeviceModal({
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
                     </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Aksi
+                      </label>
+                      <button
+                        onClick={() => removePort(index)}
+                        className="text-red-600 hover:text-red-700 px-3 py-2"
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
+            <div className="flex justify-end items-center mt-4">
+              <button
+                onClick={addPort}
+                className="px-3 py-1 bg-blue-600 text-white rounded-lg flex items-center gap-2 hover:bg-blue-700"
+              >
+                <Plus size={16} />
+                Add Port
+              </button>
+            </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-2">VLANs</h3>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-medium">Vlans</h3>
+            </div>
             <div className="space-y-4">
               {editedDevice.vlans.map((vlan, index) => (
                 <div key={index} className="border rounded-lg p-4">
-                  <div className="grid grid-cols-5 gap-4">
+                  <div className="flex gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        VLAN ID
+                        ID
                       </label>
                       <input
                         type="number"
@@ -217,7 +331,7 @@ export default function DeviceModal({
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        VLAN Name
+                        Name
                       </label>
                       <input
                         type="text"
@@ -239,8 +353,8 @@ export default function DeviceModal({
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
-                        <option value="active">Active</option>
-                        <option value="inactive">Inactive</option>
+                        <option value="Active">Active</option>
+                        <option value="Act/Unsup">Act/Unsup</option>
                         <option value="error">Error</option>
                       </select>
                     </div>
@@ -249,10 +363,16 @@ export default function DeviceModal({
                         Ports
                       </label>
                       <input
-                        type="string"
-                        value={vlan.ports}
+                        type="text"
+                        value={
+                          Array.isArray(vlan.ports) ? vlan.ports.join(", ") : ""
+                        }
                         onChange={(e) =>
-                          handleVlanChange(index, "ports", e.target.value)
+                          handleVlanChange(
+                            index,
+                            "ports",
+                            e.target.value.split(",").map((p) => p.trim())
+                          )
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
@@ -262,7 +382,7 @@ export default function DeviceModal({
                         IP
                       </label>
                       <input
-                        type="string"
+                        type="text"
                         value={vlan.ip}
                         onChange={(e) =>
                           handleVlanChange(index, "ip", e.target.value)
@@ -270,9 +390,29 @@ export default function DeviceModal({
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
                     </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Aksi
+                      </label>
+                      <button
+                        onClick={() => removeVlans(index)}
+                        className="text-red-600 hover:text-red-700 px-3 py-2"
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="flex justify-end items-center mt-4">
+              <button
+                onClick={addVlan}
+                className="px-3 py-1 bg-blue-600 text-white rounded-lg flex items-center gap-2 hover:bg-blue-700"
+              >
+                <Plus size={16} />
+                Add Vlan
+              </button>
             </div>
           </div>
         </div>
@@ -281,14 +421,16 @@ export default function DeviceModal({
           <button
             onClick={onClose}
             className="px-4 py-2 border rounded-lg hover:bg-gray-50"
+            disabled={isSaving}
           >
             Cancel
           </button>
           <button
-            onClick={() => onSave(editedDevice)}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            onClick={handleSubmit}
+            disabled={isSaving}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
           >
-            Save Changes
+            {isSaving ? "Saving..." : "Save Changes"}
           </button>
         </div>
       </div>

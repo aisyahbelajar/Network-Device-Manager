@@ -4,7 +4,7 @@ import { X, Plus, Trash2 } from "lucide-react";
 
 interface AddDeviceModalProps {
   onClose: () => void;
-  onAdd: (device: Device) => void;
+  onAdd: (device: Device) => Promise<boolean>;
 }
 
 export default function AddDeviceModal({
@@ -19,12 +19,12 @@ export default function AddDeviceModal({
     vlans: [],
   });
   const [error, setError] = useState<string>("");
-  const [success, setSuccess] = useState<string>("");
+  const [isSaving, setIsSaving] = useState(false);
 
   const addPort = () => {
     const newPort: Port = {
       port: "",
-      status: "active",
+      status: "connected",
       vlan: "",
       connected_to: {
         port: "",
@@ -48,19 +48,32 @@ export default function AddDeviceModal({
 
   const updatePort = (
     index: number,
-    field: keyof Port | keyof ConnectedDevice,
+    field: keyof Port | `connected_to.${keyof ConnectedDevice}`,
     value: string
   ) => {
-    const newPorts = [...device.ports];
-    if (field in newPorts[index]) {
-      (newPorts[index] as any)[field] = value;
-    } else {
-      newPorts[index].connected_to = {
-        ...newPorts[index].connected_to,
-        [field]: value,
-      };
-    }
-    setDevice({ ...device, ports: newPorts });
+    setDevice((prevDevice) => {
+      const updatedPorts = [...prevDevice.ports];
+
+      if (field.startsWith("connected_to.")) {
+        const subField = field.replace(
+          "connected_to.",
+          ""
+        ) as keyof ConnectedDevice;
+
+        updatedPorts[index] = {
+          ...updatedPorts[index],
+          connected_to: {
+            ...updatedPorts[index].connected_to,
+            [subField]: value,
+          },
+        };
+      } else {
+        // Update properti utama dalam Port
+        updatedPorts[index] = { ...updatedPorts[index], [field]: value };
+      }
+
+      return { ...prevDevice, ports: updatedPorts };
+    });
   };
 
   const updateVlan = (
@@ -88,22 +101,16 @@ export default function AddDeviceModal({
 
   const handleSubmit = async () => {
     try {
-      // In a real application, you would make an API call here
-      // const response = await fetch('/api/switches', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(device),
-      // });
-      // const data = await response.json();
-
-      // For now, we'll simulate a successful response
-      onAdd(device);
-      setSuccess("Device added successfully!");
-      setTimeout(() => {
+      setIsSaving(true);
+      setError("");
+      const success = await onAdd(device);
+      if (success) {
         onClose();
-      }, 1500);
+      }
     } catch (err) {
-      setError("Failed to add device. Please try again.");
+      setError(err instanceof Error ? err.message : "Failed to add device");
+    } finally {
+      setIsSaving(false);
     }
   };
 
@@ -123,12 +130,6 @@ export default function AddDeviceModal({
         {error && (
           <div className="mb-4 p-4 bg-red-100 text-red-700 rounded-lg">
             {error}
-          </div>
-        )}
-
-        {success && (
-          <div className="mb-4 p-4 bg-green-100 text-green-700 rounded-lg">
-            {success}
           </div>
         )}
 
@@ -208,9 +209,9 @@ export default function AddDeviceModal({
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
-                        <option value="active">Active</option>
-                        <option value="inactive">Inactive</option>
-                        <option value="error">Error</option>
+                        <option value="connected">Connected</option>
+                        <option value="not connected">Not Connected</option>
+                        <option value="disable">Disable</option>
                       </select>
                     </div>
                     <div>
@@ -234,7 +235,11 @@ export default function AddDeviceModal({
                         type="text"
                         value={port.connected_to.device}
                         onChange={(e) =>
-                          updatePort(index, "device", e.target.value)
+                          updatePort(
+                            index,
+                            "connected_to.device",
+                            e.target.value
+                          )
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
@@ -247,7 +252,7 @@ export default function AddDeviceModal({
                         type="text"
                         value={port.connected_to.port}
                         onChange={(e) =>
-                          updatePort(index, "connected_to", e.target.value)
+                          updatePort(index, "connected_to.port", e.target.value)
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
@@ -260,7 +265,7 @@ export default function AddDeviceModal({
                         type="text"
                         value={port.connected_to.ip}
                         onChange={(e) =>
-                          updatePort(index, "ip", e.target.value)
+                          updatePort(index, "connected_to.ip", e.target.value)
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
@@ -352,7 +357,7 @@ export default function AddDeviceModal({
                     </div>
                   </div>
                   <div className="mt-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                    <label className="block text-sm font-medium text aining text-gray-700 mb-1">
                       Ports (comma-separated)
                     </label>
                     <input
@@ -379,14 +384,16 @@ export default function AddDeviceModal({
           <button
             onClick={onClose}
             className="px-4 py-2 border rounded-lg hover:bg-gray-50"
+            disabled={isSaving}
           >
             Cancel
           </button>
           <button
             onClick={handleSubmit}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            disabled={isSaving}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
           >
-            Add Device
+            {isSaving ? "Adding..." : "Add Device"}
           </button>
         </div>
       </div>

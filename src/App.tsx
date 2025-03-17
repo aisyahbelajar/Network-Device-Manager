@@ -1,44 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Device } from "./types";
 import DeviceTable from "./components/DeviceTable";
-import DeviceModal from "./components/DeviceModal";
 import { Network } from "lucide-react";
+import { data } from "framer-motion/client";
 
 function App() {
   const [devices, setDevices] = useState<Device[]>([]);
-  const [selectedDevice, setSelectedDevice] = useState<Device | null>(null);
+  const [error, setError] = useState<string>("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/switches")
-      .then((response) => response.json())
-      .then((data) => setDevices(data))
-      .catch((error) => console.error("Error fetching devices:", error));
+    fetch("http://localhost:5000/api/switches").then((response) =>
+      response
+        .json()
+        .then((data) => setDevices(data))
+        .catch((error) => console.error("error fetching devices:", error))
+    );
   }, []);
 
-  const handleOpenEditModal = (device: Device) => {
-    setSelectedDevice(device);
-  };
-
-  const handleAdd = async () => {
-    const newDevice: Device = {
-      id: String(Date.now()),
-      name: "New Device",
-      ip: "",
-      ports: [],
-      vlans: [],
-    };
+  const handleAdd = async (newDevice: Device) => {
     try {
       const response = await fetch("http://localhost:5000/api/switches", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newDevice),
       });
-      if (response.ok) {
-        const createdDevice = await response.json();
-        setDevices([...devices, createdDevice]);
+
+      if (!response.ok) {
+        throw new Error("Failed to add device");
       }
-    } catch (error) {
-      console.error("Error adding device:", error);
+
+      const addedDevice = await response.json();
+      setDevices((prevDevices) => [...prevDevices, addedDevice]);
+      setError("");
+      return true;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to add device");
+      return false;
     }
   };
 
@@ -53,15 +50,21 @@ function App() {
         }
       );
 
-      if (response.ok) {
-        setDevices((prevDevices) =>
-          prevDevices.map((device) =>
-            device._id === updatedDevice._id ? updatedDevice : device
-          )
-        );
+      if (!response.ok) {
+        throw new Error("Failed to update device");
       }
-    } catch (error) {
-      console.error("Error updating device:", error);
+
+      const updated = await response.json();
+      setDevices((prevDevices) =>
+        prevDevices.map((device) =>
+          device._id === updated._id ? updated : device
+        )
+      );
+      setError("");
+      return true;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to update device");
+      return false;
     }
   };
 
@@ -74,11 +77,19 @@ function App() {
             method: "DELETE",
           }
         );
-        if (response.ok) {
-          setDevices(devices.filter((device) => device._id !== id));
+
+        if (!response.ok) {
+          throw new Error("Failed to delete device");
         }
-      } catch (error) {
-        console.error("Error deleting device:", error);
+
+        setDevices((prevDevices) =>
+          prevDevices.filter((device) => device._id !== id)
+        );
+        setError("");
+      } catch (err) {
+        setError(
+          err instanceof Error ? err.message : "Failed to delete device"
+        );
       }
     }
   };
@@ -93,21 +104,16 @@ function App() {
           </h1>
         </div>
 
-        {selectedDevice && (
-          <DeviceModal
-            device={selectedDevice}
-            onClose={() => setSelectedDevice(null)}
-            onSave={async (updatedDevice) => {
-              await handleEdit(updatedDevice);
-              setSelectedDevice(null);
-            }}
-          />
+        {error && (
+          <div className="mb-4 p-4 bg-red-100 text-red-700 rounded-lg">
+            {error}
+          </div>
         )}
 
         <DeviceTable
           devices={devices}
           onAdd={handleAdd}
-          onEdit={handleOpenEditModal}
+          onEdit={handleEdit}
           onDelete={handleDelete}
         />
       </div>

@@ -25,7 +25,6 @@ export default function DeviceTable({
   onDelete,
 }: DeviceTableProps) {
   const [search, setSearch] = useState("");
-  const [vlanFilter, setVlanFilter] = useState("");
   const [sortField, setSortField] = useState<SortField>("name");
   const [sortOrder, setSortOrder] = useState<SortOrder>("asc");
   const [selectedDevice, setSelectedDevice] = useState<Device | null>(null);
@@ -54,14 +53,9 @@ export default function DeviceTable({
         device.name.toLowerCase().includes(searchLower) ||
         device.ip.toLowerCase().includes(searchLower) ||
         matchesConnectedDevice ||
-        device.vlans.some((vlan) =>
-          vlan.name.toLowerCase().includes(searchLower)
-        );
+        device.vlans.some((vlan) => vlan.id === Number(searchLower));
 
-      const matchesVlan =
-        !vlanFilter || device.vlans.some((vlan) => vlan.name === vlanFilter);
-
-      return matchesSearch && matchesVlan;
+      return matchesSearch;
     })
     .sort((a, b) => {
       const compareValue = sortOrder === "asc" ? 1 : -1;
@@ -74,10 +68,6 @@ export default function DeviceTable({
   );
 
   const totalPages = Math.ceil(filteredDevices.length / itemsPerPage);
-
-  const uniqueVlans = Array.from(
-    new Set(devices.flatMap((device) => device.vlans.map((vlan) => vlan.name)))
-  );
 
   const handleAddDevice = (newDevice: Device) => {
     onAdd(newDevice);
@@ -101,18 +91,6 @@ export default function DeviceTable({
               onChange={(e) => setSearch(e.target.value)}
             />
           </div>
-          <select
-            className="px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            value={vlanFilter}
-            onChange={(e) => setVlanFilter(e.target.value)}
-          >
-            <option value="">All VLANs</option>
-            {uniqueVlans.map((vlan) => (
-              <option key={vlan} value={vlan}>
-                {vlan}
-              </option>
-            ))}
-          </select>
         </div>
         <button
           onClick={() => setShowAddModal(true)}
@@ -176,11 +154,12 @@ export default function DeviceTable({
                   <div className="flex flex-wrap gap-2">
                     {device.ports.map((port) => (
                       <div key={port._id} className="flex flex-col gap-1">
-                        {port.connected_to && (
-                          <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
-                            {port.connected_to.device} : {port.connected_to.ip}
-                          </span>
-                        )}
+                        {port.connected_to &&
+                          typeof port.connected_to === "object" && (
+                            <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                              {port.connected_to.device} {port.connected_to.ip}
+                            </span>
+                          )}
                       </div>
                     ))}
                   </div>
@@ -192,7 +171,7 @@ export default function DeviceTable({
                         key={vlan.id}
                         className="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
                       >
-                        {vlan.name}
+                        {vlan.id}
                       </span>
                     ))}
                   </div>
@@ -202,7 +181,7 @@ export default function DeviceTable({
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        onEdit(device);
+                        setSelectedDevice(device);
                       }}
                       className="p-2 text-blue-600 hover:bg-blue-100 rounded-full"
                     >
