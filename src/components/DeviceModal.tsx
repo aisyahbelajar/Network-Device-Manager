@@ -136,7 +136,7 @@ export default function DeviceModal({
           <h2 className="text-2xl font-bold">Edit Device</h2>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-full"
+            className="p-2 hover:bg-gray-500 hover:text-white rounded-full fixed right-28 bg-white"
           >
             <X size={24} />
           </button>
@@ -207,7 +207,15 @@ export default function DeviceModal({
                         onChange={(e) =>
                           handlePortChange(index, "status", e.target.value)
                         }
-                        className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:border-transparent 
+    ${
+      port.status === "connected"
+        ? "bg-green-100 text-green-800 border-green-500 focus:ring-green-500"
+        : port.status === "not connected"
+        ? "bg-red-100 text-red-800 border-red-500 focus:ring-red-500"
+        : "bg-gray-100 text-gray-800 border-gray-500 focus:ring-gray-500"
+    }
+  `}
                       >
                         <option value="connected">Connected</option>
                         <option value="not connected">Not Connected</option>
@@ -351,7 +359,16 @@ export default function DeviceModal({
                         onChange={(e) =>
                           handleVlanChange(index, "status", e.target.value)
                         }
-                        className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                          ${
+                            vlan.status === "Active"
+                              ? "bg-blue-100 text-blue-800 border-blue-500 focus:ring-blue-500"
+                              : vlan.status === "Act/Unsup"
+                              ? "bg-yellow-100 text-yellow-800 border-yellow-500 focus:ring-yellow-500"
+                              : "bg-blue-100 text-blue-800 border-blue-500 focus:ring-blue-500"
+                          }
+                          
+                          `}
                       >
                         <option value="Active">Active</option>
                         <option value="Act/Unsup">Act/Unsup</option>

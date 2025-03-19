@@ -1364,7 +1364,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/3",
         "status": "connected",
@@ -1374,7 +1374,7 @@
         "connected_to": {
           "port": null,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/4",
         "status": "connected",
@@ -1384,7 +1384,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/5",
        "status": "connected",
@@ -1394,7 +1394,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/6",
         "status": "connected",
@@ -1404,7 +1404,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/7",
        "status": "connected",
@@ -1626,7 +1626,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/3",
         "status": "connected",
@@ -1636,7 +1636,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/4",
         "status": "connected",
@@ -1646,7 +1646,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gi1/0/5",
         "status": "connected",
@@ -4991,7 +4991,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/17",
         "status": "connected",
@@ -5001,7 +5001,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/18",
         "status": "connected",
@@ -5011,7 +5011,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/19",
         "status": "connected",
@@ -5021,7 +5021,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/20",
         "status": "connected",
@@ -5031,7 +5031,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/21",
         "status": "connected",
@@ -5041,7 +5041,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/22",
         "status": "connected",
@@ -5051,7 +5051,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/23",
         "status": "connected",
@@ -5061,7 +5061,7 @@
         "connected_to": {
           "port":null ,
           "ip": null,
-          "device": "AP management"
+          "device": "ap_management"
         },
         "port": "Gig 1/0/24",
         "status": "connected",
@@ -5297,31 +5297,31 @@
       {
         "connected_to": null,
         "port": "Gig 1/0/2",
-        "status": "Disabled",
+        "status": "disabled",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/3",
-        "status": "Disabled",
+        "status": "disabled",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/4",
-        "status": "Disabled",
+        "status": "disabled",
         "vlan": "trunk"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/11",
-        "status": "Disabled",
+        "status": "disabled",
         "vlan": "100"
       },
       {
         "connected_to": null,
         "port": "Gig 1/0/12",
-        "status": "Disabled",
+        "status": "disabled",
         "vlan": "100"
       },
       {
