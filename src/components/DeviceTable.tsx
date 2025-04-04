@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { Device, SortField, SortOrder } from "../types";
-import {
-  Search,
-  Plus,
-  ArrowUpDown,
-  Trash2,
-  Edit,
-  Stethoscope,
-} from "lucide-react";
+import { Search, Plus, ArrowUpDown, Trash2, Edit } from "lucide-react";
 import DeviceModal from "./DeviceModal";
 import AddDeviceModal from "./AddDeviceModal";
 
