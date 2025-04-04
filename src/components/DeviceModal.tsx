@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Device, Port, Vlan } from "../types";
 import { X, Plus, Trash2 } from "lucide-react";
-import { NumericType } from "mongodb";
 
 interface DeviceModalProps {
   device: Device;
@@ -136,7 +135,7 @@ export default function DeviceModal({
           <h2 className="text-2xl font-bold">Edit Device</h2>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-full"
+            className="p-2 hover:bg-gray-500 hover:text-white rounded-full bg-white"
           >
             <X size={24} />
           </button>
@@ -184,7 +183,7 @@ export default function DeviceModal({
             <div className="space-y-4">
               {editedDevice.ports.map((port, index) => (
                 <div key={index} className="border rounded-lg p-4">
-                  <div className="flex gap-4">
+                  <div className="lg:flex gap-4 grid grid-cols-2 md:grid-cols-3">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         Port Number
@@ -207,7 +206,15 @@ export default function DeviceModal({
                         onChange={(e) =>
                           handlePortChange(index, "status", e.target.value)
                         }
-                        className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:border-transparent 
+    ${
+      port.status === "connected"
+        ? "bg-green-100 text-green-800 border-green-500 focus:ring-green-500"
+        : port.status === "not connected"
+        ? "bg-red-100 text-red-800 border-red-500 focus:ring-red-500"
+        : "bg-gray-100 text-gray-800 border-gray-500 focus:ring-gray-500"
+    }
+  `}
                       >
                         <option value="connected">Connected</option>
                         <option value="not connected">Not Connected</option>
@@ -230,7 +237,7 @@ export default function DeviceModal({
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Connected To
+                        Connected To Port
                       </label>
                       <input
                         type="text"
@@ -266,7 +273,7 @@ export default function DeviceModal({
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Device
+                        Device Name
                       </label>
                       <input
                         type="text"
@@ -315,7 +322,7 @@ export default function DeviceModal({
             <div className="space-y-4">
               {editedDevice.vlans.map((vlan, index) => (
                 <div key={index} className="border rounded-lg p-4">
-                  <div className="flex gap-4">
+                  <div className="lg:flex gap-4 grid grid-cols-2 md:grid-cols-3">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         ID
@@ -351,9 +358,18 @@ export default function DeviceModal({
                         onChange={(e) =>
                           handleVlanChange(index, "status", e.target.value)
                         }
-                        className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className={`w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                          ${
+                            vlan.status === "active"
+                              ? "bg-blue-100 text-blue-800 border-blue-500 focus:ring-blue-500"
+                              : vlan.status === "Act/Unsup"
+                              ? "bg-yellow-100 text-yellow-800 border-yellow-500 focus:ring-yellow-500"
+                              : "bg-gray-100 text-gray-800 border-gray-500 focus:ring-gray-500"
+                          }
+                          
+                          `}
                       >
-                        <option value="Active">Active</option>
+                        <option value="active">Active</option>
                         <option value="Act/Unsup">Act/Unsup</option>
                         <option value="error">Error</option>
                       </select>
@@ -362,8 +378,7 @@ export default function DeviceModal({
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         Ports
                       </label>
-                      <input
-                        type="text"
+                      <textarea
                         value={
                           Array.isArray(vlan.ports) ? vlan.ports.join(", ") : ""
                         }
@@ -375,6 +390,7 @@ export default function DeviceModal({
                           )
                         }
                         className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        rows={2}
                       />
                     </div>
                     <div>

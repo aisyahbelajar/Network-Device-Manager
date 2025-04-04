@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { Device, SortField, SortOrder } from "../types";
-import {
-  Search,
-  Plus,
-  ArrowUpDown,
-  Trash2,
-  Edit,
-  Stethoscope,
-} from "lucide-react";
+import { Search, Plus, ArrowUpDown, Trash2, Edit } from "lucide-react";
 import DeviceModal from "./DeviceModal";
 import AddDeviceModal from "./AddDeviceModal";
 
@@ -152,14 +145,24 @@ export default function DeviceTable({
                 <td className="px-6 py-4 whitespace-nowrap">{device.ip}</td>
                 <td className="px-6 py-4">
                   <div className="flex flex-wrap gap-2">
-                    {device.ports.map((port) => (
+                    {[
+                      ...new Map(
+                        device.ports
+                          .filter(
+                            (port) =>
+                              port.connected_to &&
+                              typeof port.connected_to === "object"
+                          )
+                          .map((port) => [
+                            `${port.connected_to.device}-${port.connected_to.ip}`,
+                            port,
+                          ])
+                      ).values(),
+                    ].map((port) => (
                       <div key={port._id} className="flex flex-col gap-1">
-                        {port.connected_to &&
-                          typeof port.connected_to === "object" && (
-                            <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
-                              {port.connected_to.device} {port.connected_to.ip}
-                            </span>
-                          )}
+                        <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                          {port.connected_to.device} {port.connected_to.ip}
+                        </span>
                       </div>
                     ))}
                   </div>
