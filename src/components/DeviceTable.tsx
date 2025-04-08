@@ -52,6 +52,17 @@ export default function DeviceTable({
     })
     .sort((a, b) => {
       const compareValue = sortOrder === "asc" ? 1 : -1;
+      if (sortField === "ip") {
+        const ipA = a.ip.split(".").map(Number);
+        const ipB = b.ip.split(".").map(Number);
+
+        for (let i = 0; i < 4; i++) {
+          if (ipA[i] !== ipB[i]) {
+            return (ipA[i] - ipB[i]) * compareValue;
+          }
+        }
+        return 0;
+      }
       return a[sortField] > b[sortField] ? compareValue : -compareValue;
     });
 
