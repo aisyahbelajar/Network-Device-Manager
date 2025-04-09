@@ -132,7 +132,7 @@ export default function DeviceModal({
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg p-6 max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="bg-white rounded-lg p-6 max-w-fit w-full max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold">Edit Device</h2>
           <button
@@ -190,13 +190,17 @@ export default function DeviceModal({
               />
             </div>
             <div className="space-y-4">
-              {editedDevice.ports
-                .filter((port) =>
-                  port.connected_to?.device
+              {editedDevice.ports.map((port, index) => {
+                if (
+                  searchPortDevice &&
+                  !port.connected_to?.device
                     ?.toLowerCase()
                     .includes(searchPortDevice.toLowerCase())
-                )
-                .map((port, index) => (
+                ) {
+                  return null;
+                }
+
+                return (
                   <div key={index} className="border rounded-lg p-4">
                     <div className="lg:flex gap-4 grid grid-cols-2 md:grid-cols-3">
                       <div>
@@ -317,7 +321,8 @@ export default function DeviceModal({
                       </div>
                     </div>
                   </div>
-                ))}
+                );
+              })}
             </div>
             <div className="flex justify-end items-center mt-4">
               <button
