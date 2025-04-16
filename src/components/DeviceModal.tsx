@@ -189,15 +189,24 @@ export default function DeviceModal({
                 className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent w-64"
               />
             </div>
+
             <div className="space-y-4">
               {editedDevice.ports.map((port, index) => {
-                if (
-                  searchPortDevice &&
-                  !port.connected_to?.device
+                if (searchPortDevice) {
+                  const lowerSearch = searchPortDevice.toLowerCase();
+                  const vlanMatch = port.vlan
                     ?.toLowerCase()
-                    .includes(searchPortDevice.toLowerCase())
-                ) {
-                  return null;
+                    .includes(lowerSearch);
+                  const portMatch = port.port
+                    ?.toLowerCase()
+                    .includes(lowerSearch);
+                  const deviceMatch = port.connected_to?.device
+                    ?.toLowerCase()
+                    .includes(lowerSearch);
+
+                  if (!portMatch && !deviceMatch && !vlanMatch) {
+                    return null;
+                  }
                 }
 
                 return (
@@ -343,7 +352,7 @@ export default function DeviceModal({
                 placeholder="Search by VLAN ID"
                 value={searchVlanId}
                 onChange={(e) => setSearchVlanId(e.target.value)}
-                className="w-full max-w-xs px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent mb-4"
+                className="max-w-xs px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>
             <div className="space-y-4">
@@ -422,7 +431,7 @@ export default function DeviceModal({
                               e.target.value.split(",").map((p) => p.trim())
                             )
                           }
-                          className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          className="w-[100%] px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                           rows={2}
                         />
                       </div>
