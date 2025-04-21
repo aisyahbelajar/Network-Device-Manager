@@ -9,7 +9,8 @@ export interface Port {
   status: string;
   vlan: string;
   connected_to: ConnectedDevice;
-}s
+}
+s;
 
 export interface Vlan {
   id: number;
@@ -20,7 +21,8 @@ export interface Vlan {
 }
 
 export interface Device {
-  id: string;s
+  id: string;
+
   name: string;
   ip: string;
   ports: Port[];

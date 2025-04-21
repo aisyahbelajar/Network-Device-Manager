@@ -23,6 +23,7 @@ export default function DeviceTable({
   const [selectedDevice, setSelectedDevice] = useState<Device | null>(null);
   const [showAddModal, setShowAddModal] = useState(false);
   const [page, setPage] = useState(1);
+  const [portFilter, setPortFilter] = useState("");
   const itemsPerPage = 10;
 
   const handleSort = (field: SortField) => {
@@ -48,7 +49,10 @@ export default function DeviceTable({
         matchesConnectedDevice ||
         device.vlans.some((vlan) => vlan.id === Number(searchLower));
 
-      return matchesSearch;
+      const matchesPort =
+        !portFilter || device.ports.some((port) => port.vlan.includes(","));
+
+      return matchesSearch && matchesPort;
     })
     .sort((a, b) => {
       const compareValue = sortOrder === "asc" ? 1 : -1;
@@ -171,7 +175,15 @@ export default function DeviceTable({
                       ).values(),
                     ].map((port) => (
                       <div key={port._id} className="flex flex-col gap-1">
-                        <span className="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                        <span
+                          className={`px-2 py-1 rounded-full text-sm ${
+                            port.connected_to.device.includes(",")
+                              ? "bg-red-100 text-red-800"
+                              : port.connected_to.ip
+                              ? "bg-yellow-100 text-yellow-800"
+                              : "bg-green-100 text-green-800"
+                          }`}
+                        >
                           {port.connected_to.device} {port.connected_to.ip}
                         </span>
                       </div>
