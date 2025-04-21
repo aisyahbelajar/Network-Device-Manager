@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Device } from "./types";
 import DeviceTable from "./components/DeviceTable";
 import { Network } from "lucide-react";
-import { data } from "framer-motion/client";
+import PanduanPenggunaan from "./templates/PanduanPenggunaan";
 
 function App() {
   const [devices, setDevices] = useState<Device[]>([]);
   const [error, setError] = useState<string>("");
+  const [showPanduan, setShowPanduan] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:5000/api/switches").then((response) =>
@@ -97,12 +98,24 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex items-center gap-4 mb-8">
-          <Network size={32} className="text-blue-600" />
-          <h1 className="text-3xl font-bold text-gray-900">
-            Network Device Manager
-          </h1>
+        <div className="flex justify-between mb-8">
+          <div className="flex items-center gap-4">
+            <Network size={32} className="text-blue-600" />
+            <h1 className="text-3xl font-bold text-gray-900">
+              Network Device Manager
+            </h1>
+          </div>
+          <button
+            onClick={() => setShowPanduan(true)}
+            className="px-4 py-1 bg-red-600 text-white rounded-lg flex items-center gap-2 hover:bg-red-700 transition-colors"
+          >
+            Panduan Penggunaan
+          </button>
         </div>
+
+        {showPanduan && (
+          <PanduanPenggunaan onClose={() => setShowPanduan(false)} />
+        )}
 
         {error && (
           <div className="mb-4 p-4 bg-red-100 text-red-700 rounded-lg">
