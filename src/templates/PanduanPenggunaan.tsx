@@ -30,12 +30,7 @@ export default function PanduanPenggunaan({ onClose }: PanduanPenggunaanProps) {
             Pencarian dapat dilakukan berdasarkan nama, IP, Device, dan Vlan
             yang terhubung.
           </li>
-          <li>
-            Untuk mencari port yang terhubung ke dua VLAN atau lebih, cukup
-            ketik tanda koma{" "}
-            <code className="bg-gray-100 px-1 rounded text-sm">","</code> pada
-            pencarian.
-          </li>
+
           <li>
             Visualisasi port yang connected dapat dibedakan berdasarkan :
             <div className="pl-4">
@@ -54,17 +49,35 @@ export default function PanduanPenggunaan({ onClose }: PanduanPenggunaanProps) {
             </div>
           </li>
           <li>
+            Untuk mencari port yang terhubung ke dua VLAN atau lebih, cukup
+            ketik tanda koma{" "}
+            <code className="bg-gray-100 px-1 rounded text-sm">","</code> pada
+            pencarian.
+          </li>
+          <li>
             Untuk mencari switch yang memiliki VLAN tertentu, cukup masukkan
             nomor VLAN (contoh:{" "}
             <code className="bg-gray-100 px-1 rounded text-sm">444</code>).
           </li>
           <li>
             Di bagian port pada detail switch, Anda dapat melakukan pencarian
-            berdasarkan nama port, nama vlan, dan nama device.
+            berdasarkan nama port, nama vlan, dan nama device. (contoh :{" "}
+            <code className="bg-gray-100 px-1 rounded text-sm">Gi 1/0/1</code>{" "}
+            atau <code className="bg-gray-100 px-1 rounded text-sm">444</code>{" "}
+            atau{" "}
+            <code className="bg-gray-100 px-1 rounded text-sm">
+              Dikyasa-Jatim
+            </code>
+            )
           </li>
           <li>
             Di bagian VLAN pada detail switch, Anda dapat melakukan pencarian
-            berdasarkan ID VLAN atau nama VLAN.
+            berdasarkan ID VLAN atau nama VLAN. (contoh :{" "}
+            <code className="bg-gray-100 px-1 rounded text-sm">222</code> atau{" "}
+            <code className="bg-gray-100 px-1 rounded text-sm">
+              tribrata_user
+            </code>
+            )
           </li>
         </ol>
       </div>
